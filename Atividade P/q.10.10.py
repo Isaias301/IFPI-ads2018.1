@@ -1,23 +1,15 @@
 def main():
-	file = open('words.txt')
-	print(outra_forma(file))
-	    
-
-def use_append(file):
-	lista = []
-	for line in file:
-	    word = line.strip()
-	    lista.append(word)
-	return lista
+	lista = [1,2,3,4,5]
+	print(in_bisect(lista, 7))
 
 
-def outra_forma(file): # Terminar outra forma
-	t = ''
-	for line in file:
-	    word = line.strip()
-	    t = t + word
-	return t
+def in_bisect(lista, valor_alvo):
 
+	try:
+		if lista.index(valor_alvo) != None:
+			return lista.index(valor_alvo)
+	except:
+		return None
 
 
 if __name__ == '__main__':
