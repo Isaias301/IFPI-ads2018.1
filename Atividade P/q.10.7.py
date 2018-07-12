@@ -1,15 +1,22 @@
 def main():
-	lista = [1,2,3,4]
-	print(has_duplicates(lista))
+	lista = input().split()
+	lista_int = transforma_numeros_int(lista)
+	print(has_duplicates(lista_int))
+
+
+def transforma_numeros_int(lista):
+	for i in range(len(lista)):
+		lista[i] = int(lista[i])
+	return lista
 
 
 def has_duplicates(lista):
 	elemento = 0
 	cont = 0
-	for i in lista:
-		if i == elemento:
+	for i in range(len(lista)):
+		if lista[i] == elemento:
 			cont += 1
-		elemento = i		
+		elemento = lista[i]
 	if cont > 0:
 		return True
 	else:

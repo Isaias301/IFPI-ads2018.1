@@ -1,17 +1,17 @@
 def main():
 	file = open('words.txt')
-	print(outra_forma(file))
-	    
+	print(use_append(file))
+
 
 def use_append(file):
 	lista = []
-	for line in file:
-	    word = line.strip()
+	for i in file:
+	    word = i.strip()
 	    lista.append(word)
 	return lista
 
 
-def outra_forma(file): # Terminar outra forma
+def outra_forma(file):
 	t = ''
 	for line in file:
 	    word = line.strip()

@@ -1,11 +1,20 @@
 def main():
-	lista = [1,2,3,4]
-	print(chop(lista))
-	
+	lista = input().split()
+	lista_int = transforma_itens_int(lista)
+	resultado = chop(lista_int)
+	print(resultado)
+
+
+# transforma todos os iten do vetor em inteiros. Ou seja isso e um mapeamento.
+def transforma_itens_int(lista):
+	for i in range(len(lista)):
+		lista[i] = int(lista[i])
+	return lista
+
 
 def chop(lista):
-	lista.pop(0)
-	lista.pop(len(lista)-1)
+	del(lista[0])
+	del(lista[len(lista)-1])
 	return lista
 
 
