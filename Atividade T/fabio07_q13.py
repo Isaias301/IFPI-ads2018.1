@@ -18,6 +18,5 @@ def determinante(vetor):
     return diag_primaria + diag_secundaria
 
 
-
 if __name__ == '__main__':
     main()
