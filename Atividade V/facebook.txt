@@ -1,0 +1,17 @@
+#AtividadeV Prática Individual
+
+Conteúdo:
+  Vetores,
+  Matrizes,
+  Leitura de dados (Arquivo),
+  Mapeamento,
+  Filtragem,
+  Redução,
+  Ordenação (list.sort e sorted),
+  Lambdas,
+  demais assuntos abordados até então.
+
+Amanhã(01/Agosto) às 13h às 15h no B3-18*
+Valor: 2,0 (AtividadeX) + 30% por Versão Pythonica
+
+*15h às 16h Aula normal sobre Ordenação
